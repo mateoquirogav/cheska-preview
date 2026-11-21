@@ -105,6 +105,20 @@ svg{display:block}
 .dsc.ju{background:#F6EEE4}
 .dsc .h2 .tl{font:600 18px Inter;letter-spacing:0;text-transform:none;color:var(--mu);margin-left:6px;vertical-align:middle}
 .dsc .link{background:#fff;border:0;padding:11px 18px;border-radius:999px;box-shadow:0 8px 20px -14px rgba(31,52,69,.5)}
+.dsc .hr{display:flex;align-items:center;gap:10px}
+.arws{display:flex;gap:8px}
+.arws button{all:unset;cursor:pointer;width:42px;height:42px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;box-shadow:0 8px 20px -14px rgba(31,52,69,.5)}
+.arws svg{width:18px;height:18px}
+.dsc .car{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 54px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:6px}
+.dsc .car::-webkit-scrollbar{display:none}
+.dsc .car .card{scroll-snap-align:start}
+.dots{display:none;justify-content:center;gap:6px;margin-top:18px}
+.dots i{width:7px;height:7px;border-radius:9px;background:rgba(31,52,69,.2);transition:width .3s,background .3s}
+.dots i.on{width:22px;background:var(--ink)}
+.btn.ver{margin-top:22px;height:56px;padding:0 34px}
+.hist{position:relative;width:100%;max-width:460px;justify-self:center;aspect-ratio:1;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.55)}
+.hist img{width:100%;height:100%;object-fit:cover;display:block}
+.hist span{position:absolute;left:14px;bottom:14px;background:#fff;color:var(--ink);font:700 11px Montserrat;letter-spacing:.08em;text-transform:uppercase;padding:8px 12px;border-radius:999px}
 /* llamado final: ver todos los productos */
 .cta-f{position:relative;overflow:hidden;isolation:isolate;background:var(--bl);color:#fff;border-radius:28px;padding:64px 60px;text-align:center}
 .cta-f .kick{color:var(--lm)}
@@ -269,29 +283,37 @@ svg{display:block}
   .burger{display:block}
   .logo{margin:0 auto}.logo img{height:32px}.logo b{font-size:19px}.logo b small{font-size:7.5px}
   .nav{display:none}.ico{margin-left:0;gap:12px}.ico .opt{display:none}
-  .hero{height:auto;aspect-ratio:9/16}
+  .hero{height:auto;aspect-ratio:4/5}
   .hcols{display:none}.bgv{display:block}
-  .hero:after{background:linear-gradient(180deg,rgba(31,52,69,.85) 0%,rgba(31,52,69,.4) 40%,rgba(31,52,69,0) 60%)}
-  .hero .wrap{justify-content:flex-start;padding-top:30px}
-  .hero h1{font-size:38px}
-  .hero p{font-size:14.5px;margin-top:14px}
+  .bgv video,.bgv .poster{object-position:center 18%}
+  .hero:after{background:linear-gradient(0deg,rgba(31,52,69,.92) 0%,rgba(31,52,69,.6) 30%,rgba(31,52,69,0) 55%)}
+  .hero .wrap{justify-content:flex-end;padding-bottom:26px}
+  .hero .kick{font-size:10px;margin-bottom:8px}
+  .hero h1{font-size:28px;line-height:1.05;max-width:none}
+  .hero h1 em{display:inline;margin-top:0;padding:0 .12em;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .hero p{font-size:13.5px;margin-top:10px;line-height:1.5}
   .hero .cta,.chips{display:none}
   .bens{padding:18px 0 0}
   .ben-g{grid-template-columns:1fr 1fr;gap:8px}
   .ben{flex-direction:column;align-items:flex-start;gap:8px;padding:12px;border-radius:16px}
   .ben i{width:32px;height:32px}.ben i svg{width:16px;height:16px}
   .ben h4{font-size:11.5px}.ben p{font-size:10.5px;margin-top:2px}
-  .cats3{gap:7px}
-  .c3{border-radius:12px}
+  .cats3{gap:5px;margin:0 -11px}
+  .c3{border-radius:10px}
   .grid{grid-template-columns:1fr 1fr;gap:24px 10px}
   .card .ph{border-radius:14px}
-  /* descubrí: 2 hileras que se deslizan de costado */
+  /* descubrí: carrusel de una hilera */
   .dsc{padding:48px 0}
   .dsc .h2 .tl{display:block;font-size:14px;margin:6px 0 0}
   .dsc .link{padding:9px 14px}
-  .dsc .grid{grid-template-columns:none;grid-template-rows:auto auto;grid-auto-flow:column;grid-auto-columns:44%;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 6px;scroll-padding:0 16px;scrollbar-width:none}
-  .dsc .grid::-webkit-scrollbar{display:none}
-  .dsc .card{scroll-snap-align:start}
+  .arws{display:none}
+  .dsc .car{grid-auto-columns:58%;gap:12px;margin:0 -16px;padding:0 16px 6px;scroll-padding:0 16px}
+  .dots{display:flex}
+  /* destacado = vista previa */
+  .dth{display:none}
+  .dmain{aspect-ratio:1}
+  .dven{gap:8px;margin-top:14px}
+  .dst .btn.ver{width:100%}
   .cta-f{padding:44px 22px;border-radius:20px}.cta-f .h2{font-size:27px}.cta-f .btn{width:100%;padding:0 16px}.cta-f .wm{width:180px}.cta-f .wm.l{width:130px}
   .card h3{font-size:12px;margin-top:10px}.card .lb{font-size:11px}.pr b{font-size:16px}.pr b s{font-size:11px;margin-left:4px}.pr .tr{font-size:11.5px;gap:5px}.pr .tr i{font-size:9px;padding:2px 5px}.pr .cu{font-size:11px}
   .tag{top:8px;left:8px;font-size:8.5px;padding:5px 8px}
@@ -411,16 +433,16 @@ svg{display:block}
 
   <!-- 5b · Descubrí Mini / Kids / Junior (2 hileras cada uno, antes del problema-solución) -->
   <section class="dsc mi" id="dmini"><div class="wrap">
-    <div class="head rv"><div><div class="kick">Recién nacidos a 18 meses</div><div class="h2">Descubrí <em>Mini</em><span class="tl">(RN a T5)</span></div></div><a class="link" href="#dmini">Ver todo Mini</a></div>
-    <div class="grid" id="gMi"></div>
+    <div class="head rv"><div><div class="kick">Recién nacidos a 18 meses</div><div class="h2">Descubrí <em>Mini</em><span class="tl">(RN a T5)</span></div></div><div class="hr"><a class="link" href="#dmini">Ver todo Mini</a><div class="arws"><button type="button" data-d="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-d="1" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></div>
+    <div class="grid car" id="gMi"></div><div class="dots"></div>
   </div></section>
   <section class="dsc ki" id="dkids"><div class="wrap">
-    <div class="head rv"><div><div class="kick">De 1 a 4 años</div><div class="h2">Descubrí <em>Kids</em><span class="tl">(T4 a T10)</span></div></div><a class="link" href="#dkids">Ver todo Kids</a></div>
-    <div class="grid" id="gKi"></div>
+    <div class="head rv"><div><div class="kick">De 1 a 4 años</div><div class="h2">Descubrí <em>Kids</em><span class="tl">(T4 a T10)</span></div></div><div class="hr"><a class="link" href="#dkids">Ver todo Kids</a><div class="arws"><button type="button" data-d="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-d="1" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></div>
+    <div class="grid car" id="gKi"></div><div class="dots"></div>
   </div></section>
   <section class="dsc ju" id="djunior"><div class="wrap">
-    <div class="head rv"><div><div class="kick">De 4 a 12 años</div><div class="h2">Descubrí <em>Junior</em><span class="tl">(T12 a T16)</span></div></div><a class="link" href="#djunior">Ver todo Junior</a></div>
-    <div class="grid" id="gJu"></div>
+    <div class="head rv"><div><div class="kick">De 4 a 12 años</div><div class="h2">Descubrí <em>Junior</em><span class="tl">(T12 a T16)</span></div></div><div class="hr"><a class="link" href="#djunior">Ver todo Junior</a><div class="arws"><button type="button" data-d="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-d="1" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></div>
+    <div class="grid car" id="gJu"></div><div class="dots"></div>
   </div></section>
 
   <!-- 6 · Productos 2×4 -->
@@ -433,15 +455,11 @@ svg{display:block}
   <!-- 7 · Problema-solución: nuestra historia + video -->
   <section class="sec ps" id="historia"><div class="wrap ps-g">
     <div class="rv">
-      <div class="kick">Quiénes somos</div>
-      <div class="h2">Más que una marca, <em>una familia.</em></div>
-      <p class="sub">Franchesca y Bautista, nuestros hijos, son el corazón de Cheska e inspiran cada prenda que elegimos. Buscamos la mayor comodidad para los más peques y una atención personalizada para cada familia que nos elige.</p>
+      <div class="kick">Nuestra historia</div>
+      <div class="h2">Todo empezó con <em>Franchesca y Bautista.</em></div>
+      <p class="sub">En Cheska somos más que una marca: somos una familia con un fuerte espíritu emprendedor. Nuestros hijos son el corazón de Cheska y nos inspiran en cada elección. Por eso buscamos la mayor comodidad en cada prenda para los más peques, y un espacio de seguridad, acompañamiento y atención personalizada para cada familia que nos elige día a día.</p>
     </div>
-    <div class="vid rv" style="--i:2">
-      <div class="ig"><i><img src="logo.png" alt=""></i>cheska.kidds</div>
-      <video class="av snd-v" src="ps.mp4" poster="ps.jpg" muted loop playsinline preload="none"></video>
-      <button class="snd" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="m17 9 4 6M21 9l-4 6"/></svg><span>Activar sonido</span></button>
-    </div>
+    <div class="hist rv" style="--i:2"><img src="familia.webp" alt="La familia de Cheska"><span>La familia Cheska</span></div>
   </div></section>
 
   <!-- 8 · Testimonios -->
@@ -484,13 +502,7 @@ svg{display:block}
         <div class="emb-r"><span>En cuotas</span><b class="cu">3 cuotas sin interés de $15.000</b></div>
       </div>
       <div class="ahorro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v8H4v-8M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>Comprándolo por separado pagás $53.500</div>
-      <div class="fx-lbl">Estampa de la manta</div>
-      <div class="fx-op"><span class="on">Azul con dino</span><span>Rosa con animales</span></div>
-      <div class="fx-buy">
-        <div class="qty"><button type="button" data-q="-1">−</button><b>1</b><button type="button" data-q="1">+</button></div>
-        <a class="btn" href="#dst1">Agregar al carrito</a>
-      </div>
-      <a class="fx-wa" href="#dst1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.4A9 9 0 1 1 21 12z"/></svg>¿Es para regalar? Te lo preparamos por WhatsApp</a>
+      <a class="btn ver" href="#producto" data-p="40">Ver el producto<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div></section>
 
@@ -514,13 +526,7 @@ svg{display:block}
         <div class="emb-r best"><span>Con transferencia<em>-20 %</em></span><b>$24.500</b></div>
         <div class="emb-r"><span>En cuotas</span><b class="cu">3 cuotas sin interés de $10.208</b></div>
       </div>
-      <div class="fx-lbl">Talle <a href="#dst2">Guía de talles</a></div>
-      <div class="fx-op"><span class="on">T1 (3-6 meses)</span><span>T3 (9-12 meses)</span></div>
-      <div class="fx-buy">
-        <div class="qty"><button type="button" data-q="-1">−</button><b>1</b><button type="button" data-q="1">+</button></div>
-        <a class="btn" href="#dst2">Agregar al carrito</a>
-      </div>
-      <a class="fx-wa" href="#dst2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.4A9 9 0 1 1 21 12z"/></svg>¿Dudas con el talle? Te ayudamos por WhatsApp</a>
+      <a class="btn ver" href="#producto" data-p="41">Ver el producto<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div></section>
 
@@ -645,7 +651,9 @@ const P=[
  ['j4','Remera Delfi T10-12','Junior','',21875,0,['T10','T12']],
  ['p20','Jean Niña Flor','Junior','',33750,0,['T12']],
  ['p03','Remeras Lara T12-14','Junior','',11000,13450,['T12','T14']],
- ['p18','Remera Viole','Junior','',20625,0,['T12','T16']]].map((p,i)=>[p[0]+'.webp',...p.slice(1),i]);
+ ['p18','Remera Viole','Junior','',20625,0,['T12','T16']],
+ ['p26','Combo Ajuar Recién Nacido','Mini','Combo',45000,53500,['Azul con dino','Rosa con animales']],
+ ['p25','Conjunto Plush Nico','Mini','Nuevo',30625,0,['T1 (3-6 meses)','T3 (9-12 meses)']]].map((p,i)=>[p[0]+'.webp',...p.slice(1),i]);
 const fm=n=>'$'+Math.round(n).toLocaleString('es-AR');
 const card=(p,k)=>{const off=p[5]?Math.round((1-p[4]/p[5])*100):0;const t=off?off+' % OFF':p[3];const cls=off?'off':(p[3]?'k':'');return `<a class="card rv" style="--i:${k%4}" href="#producto" data-p="${p[7]}"><div class="ph"><img src="${p[0]}" alt="${p[1]}" loading="lazy">${t?`<span class="tag ${cls}">${t}</span>`:''}</div><h3>${p[1]}</h3><div class="lb">${p[2]}</div><div class="pr"><b>${fm(p[4])}${p[5]?`<s>${fm(p[5])}</s>`:''}</b><span class="tr">${fm(p[4]*.8)} <i>-20 % transf.</i></span><span class="cu">3 cuotas sin interés de ${fm(p[4]/3)}</span></div></a>`};
 const $=id=>document.getElementById(id);
@@ -654,6 +662,7 @@ $('gO').innerHTML=P.slice(8,16).map(card).join('');
 $('gMi').innerHTML=P.slice(16,24).map(card).join('');
 $('gKi').innerHTML=P.slice(24,32).map(card).join('');
 $('gJu').innerHTML=P.slice(32,40).map(card).join('');
+document.querySelectorAll('.dsc .car').forEach(car=>{const d=car.nextElementSibling;const n=car.children.length;d.innerHTML='<i></i>'.repeat(n);const pint=()=>{const w=car.children[0].offsetWidth||1;const k=Math.min(n-1,Math.round(car.scrollLeft/w));[...d.children].forEach((x,j)=>x.classList.toggle('on',j===k))};car.addEventListener('scroll',pint,{passive:true});pint()});
 $('g4').innerHTML=[P[1],P[13],P[9],P[6]].map(card).join('');
 const star='<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.5 7L12 17.5 5.8 21l1.5-7L2 9.3l7-.7z"/></svg>';
 const T=Array.from({length:6},(_,i)=>`<div class="tc"><div class="st">${star.repeat(5)}</div><p>Opinión real de tu cliente</p><div class="ln" style="width:${92-i*6}%"></div><div class="ln" style="width:${70+i*4}%"></div><div class="who"><i></i><div>Nombre del cliente<small>Compró en Cheska</small></div></div></div>`).join('');
@@ -699,6 +708,8 @@ function vista(v,i){const f=v==='ficha';$('home').hidden=f;$('ficha').hidden=!f;
   document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
   $('screen').scrollTop=0;window.scrollTo(0,0);}
 document.addEventListener('click',e=>{
+  const vp=e.target.closest('a.ver[data-p]');if(vp){e.preventDefault();vista('ficha',+vp.dataset.p);return}
+  const ar=e.target.closest('.arws button');if(ar){const car=ar.closest('.dsc').querySelector('.car');const w=car.querySelector('.card').offsetWidth+18;car.scrollBy({left:w*ar.dataset.d,behavior:'smooth'});return}
   const c=e.target.closest('a.card');if(c){e.preventDefault();vista('ficha',+c.dataset.p);return}
   const g=e.target.closest('[data-go="home"]');if(g){e.preventDefault();vista('home');return}
   const t=e.target.closest('.dth button');if(t){const gal=t.closest('.dgal');gal.querySelectorAll('.dth button').forEach(b=>b.classList.toggle('on',b===t));gal.querySelector('.dmain img').src=t.dataset.src;return}
